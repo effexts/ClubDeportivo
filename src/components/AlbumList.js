@@ -6,7 +6,7 @@ import AlbumDetail from './AlbumDetail';
 class AlbumList extends Component {
   state = { albums: [] };
   componentWillMount() {
-    axios.get('../api-off/data.json')
+    axios.get('https://raw.githubusercontent.com/effexts/ClubDeportivo/master/src/api-off/data.json?token=ABtA_zt00YGFz3fzVnfKV1Du_p4_ai3rks5bzxuMwA%3D%3D')
     .then(response => this.setState({ albums: response.data }));
   }
 
